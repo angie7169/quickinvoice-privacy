@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickInvoice Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1d1d1f;
+            --muted: #6e6e73;
+            --accent: #6366f1;
+            --border: #d2d2d7;
+            --code-bg: #f5f5f7;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1c1c1e;
+                --fg: #f5f5f7;
+                --muted: #98989d;
+                --border: #38383a;
+                --code-bg: #2c2c2e;
+            }
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px;
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            color: var(--muted);
+            font-size: 15px;
+            margin: 0;
+        }
+        .updated {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 8px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin: 40px 0 12px;
+            letter-spacing: -0.01em;
+            scroll-margin-top: 20px;
+        }
+        h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 24px 0 8px;
+        }
+        p, li {
+            font-size: 15px;
+            color: var(--fg);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 4px 0;
+        }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+        .lang-toggle {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 32px;
+            flex-wrap: wrap;
+        }
+        .lang-toggle button {
+            background: var(--code-bg);
+            color: var(--fg);
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 16px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .lang-toggle button.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--muted);
+            font-size: 13px;
+        }
+        strong { font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">QuickInvoice</p>
+            <p class="updated">Last updated: 2026-06-18</p>
+        </header>
+
+        <div class="lang-toggle">
+            <button class="active" onclick="switchLang('en', event)">English</button>
+            <button onclick="switchLang('zh', event)">中文</button>
+        </div>
+
+        <!-- English -->
+        <div id="en" class="lang-section active">
+            <h2>Our Commitment to Your Privacy</h2>
+            <p>QuickInvoice ("we", "us", or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use QuickInvoice.</p>
+
+            <h2>1. Information We Do Not Collect</h2>
+            <p>QuickInvoice is designed with a <strong>privacy-first</strong> approach. We do <strong>NOT</strong> collect, store, or transmit any of the following:</p>
+            <ul>
+                <li>Personal identification information (name, email, phone)</li>
+                <li>Company or client data you enter</li>
+                <li>Invoice contents, financial data, or payment details</li>
+                <li>Device identifiers (IDFA, IDFV)</li>
+                <li>Location data</li>
+                <li>Browsing or usage analytics</li>
+            </ul>
+            <p><strong>There are no analytics SDKs, no advertising SDKs, and no crash reporting SDKs integrated into the App.</strong></p>
+
+            <h2>2. Data Stored Locally on Your Device</h2>
+            <p>All data you create in QuickInvoice — including your company profile, client list, and invoices — is stored <strong>only on your device</strong> using Apple's SwiftData framework (on-device storage).</p>
+            <ul>
+                <li>This data never leaves your device.</li>
+                <li>This data is not uploaded to any server controlled by us.</li>
+                <li>If you delete the App, all locally stored data is permanently removed.</li>
+                <li>If you use iCloud backup, your data may be included in your personal Apple iCloud backup, managed by Apple under <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank">Apple's Privacy Policy</a>.</li>
+            </ul>
+
+            <h2>3. In-App Purchases (Subscriptions)</h2>
+            <p>QuickInvoice offers auto-renewing subscriptions ("Pro Monthly" and "Pro Yearly"). Purchase and subscription management is handled entirely by <strong>Apple's StoreKit framework</strong> and the <strong>App Store</strong>.</p>
+            <ul>
+                <li>We do not process or store your payment information.</li>
+                <li>Payment is handled by Apple under your Apple ID.</li>
+                <li>We only receive a notification from Apple confirming whether your subscription is active (Pro status) — we do not receive your Apple ID, payment method, or transaction details.</li>
+                <li>Subscription status is verified on-device via Apple's StoreKit 2 APIs.</li>
+            </ul>
+
+            <h2>4. Third-Party Services</h2>
+            <p>QuickInvoice does <strong>not</strong> use any third-party services that collect user data. Specifically:</p>
+            <ul>
+                <li>No Google Firebase / Crashlytics</li>
+                <li>No Mixpanel / Amplitude / Flurry</li>
+                <li>No Sentry</li>
+                <li>No advertising networks (AdMob, Facebook Audience Network, etc.)</li>
+                <li>No attribution SDKs (AppsFlyer, Adjust, Branch)</li>
+            </ul>
+            <p>The only external service interaction is with <strong>Apple's StoreKit</strong> (App Store), as described in Section 3.</p>
+
+            <h2>5. Data Security</h2>
+            <p>Since all your data remains on your device and is protected by your device's iOS security features (passcode, Touch ID, Face ID, encryption), we rely on Apple's built-in device-level security to safeguard your information.</p>
+
+            <h2>6. Children's Privacy</h2>
+            <p>QuickInvoice is a business tool intended for professionals and freelancers. It is not directed at children under 13 (or the equivalent minimum age in your jurisdiction), and we do not knowingly collect any data from children.</p>
+
+            <h2>7. Your Rights</h2>
+            <p>Since we do not collect any personal data, there is no personal data to access, modify, or delete on our servers. You have full control over your data on your device:</p>
+            <ul>
+                <li><strong>Delete all data:</strong> Uninstall the App — all locally stored data is permanently removed.</li>
+                <li><strong>Export data:</strong> Use the App's export features (PDF, CSV) to extract your data at any time.</li>
+            </ul>
+
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be reflected within the App and on this document, with an updated "Last updated" date.</p>
+
+            <h2>9. Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact: <a href="mailto:support@quickinvoice.app">support@quickinvoice.app</a></p>
+        </div>
+
+        <!-- 中文 -->
+        <div id="zh" class="lang-section">
+            <h2>我们对您隐私的承诺</h2>
+            <p>QuickInvoice（以下简称"我们"或"本应用"）致力于保护您的隐私。本隐私政策说明您使用 QuickInvoice 时我们如何处理信息。</p>
+
+            <h2>1. 我们不收集的信息</h2>
+            <p>QuickInvoice 采用<strong>隐私优先</strong>的设计理念。我们<strong>不</strong>收集、存储或传输以下任何信息：</p>
+            <ul>
+                <li>个人身份信息（姓名、邮箱、电话）</li>
+                <li>您输入的公司或客户数据</li>
+                <li>发票内容、财务数据或支付明细</li>
+                <li>设备标识符（IDFA、IDFV）</li>
+                <li>位置信息</li>
+                <li>浏览或使用分析数据</li>
+            </ul>
+            <p><strong>本应用未集成任何分析 SDK、广告 SDK 或崩溃上报 SDK。</strong></p>
+
+            <h2>2. 本地存储在您设备上的数据</h2>
+            <p>您在 QuickInvoice 中创建的所有数据 —— 包括公司资料、客户列表和发票 —— 都<strong>仅存储在您的设备上</strong>，使用 Apple 的 SwiftData 框架（设备端存储）。</p>
+            <ul>
+                <li>这些数据不会离开您的设备。</li>
+                <li>这些数据不会上传到任何由我们控制的服务器。</li>
+                <li>如果您删除本应用，所有本地存储的数据将被永久删除。</li>
+                <li>如果您使用 iCloud 备份，您的数据可能包含在您个人的 Apple iCloud 备份中，由 Apple 根据 <a href="https://www.apple.com/legal/privacy/en-ww/" target="_blank">Apple 隐私政策</a> 管理。</li>
+            </ul>
+
+            <h2>3. 应用内购买（订阅）</h2>
+            <p>QuickInvoice 提供自动续订订阅（"Pro 月度"和"Pro 年度"）。购买和订阅管理完全由 <strong>Apple 的 StoreKit 框架</strong>和 <strong>App Store</strong> 处理。</p>
+            <ul>
+                <li>我们不处理或存储您的支付信息。</li>
+                <li>付款由 Apple 在您的 Apple ID 下处理。</li>
+                <li>我们仅收到 Apple 的通知，确认您的订阅是否处于活跃状态（Pro 状态）—— 我们不接收您的 Apple ID、支付方式或交易明细。</li>
+                <li>订阅状态通过 Apple 的 StoreKit 2 API 在设备端验证。</li>
+            </ul>
+
+            <h2>4. 第三方服务</h2>
+            <p>QuickInvoice <strong>不</strong>使用任何收集用户数据的第三方服务。具体而言：</p>
+            <ul>
+                <li>无 Google Firebase / Crashlytics</li>
+                <li>无 Mixpanel / Amplitude / Flurry</li>
+                <li>无 Sentry</li>
+                <li>无广告网络（AdMob、Facebook Audience Network 等）</li>
+                <li>无归因 SDK（AppsFlyer、Adjust、Branch）</li>
+            </ul>
+            <p>唯一的外部服务交互是与 <strong>Apple 的 StoreKit</strong>（App Store），详见第 3 节。</p>
+
+            <h2>5. 数据安全</h2>
+            <p>由于您的所有数据都保留在设备上，并受到您设备 iOS 安全功能（密码、Touch ID、Face ID、加密）的保护，我们依赖 Apple 内置的设备级安全功能来保护您的信息。</p>
+
+            <h2>6. 儿童隐私</h2>
+            <p>QuickInvoice 是一款面向专业人士和自由职业者的商业工具，不针对 13 岁以下（或您所在司法管辖区的同等最低年龄）的儿童，我们也不会有意收集任何来自儿童的数据。</p>
+
+            <h2>7. 您的权利</h2>
+            <p>由于我们不收集任何个人数据，因此我们的服务器上没有可供访问、修改或删除的个人数据。您对自己的设备上的数据拥有完全控制权：</p>
+            <ul>
+                <li><strong>删除所有数据：</strong>卸载本应用 —— 所有本地存储的数据将被永久删除。</li>
+                <li><strong>导出数据：</strong>随时使用本应用的导出功能（PDF、CSV）提取您的数据。</li>
+            </ul>
+
+            <h2>8. 政策变更</h2>
+            <p>我们可能会不时更新本隐私政策。任何变更将反映在本应用内和本文件中，并更新"最后更新"日期。</p>
+
+            <h2>9. 联系我们</h2>
+            <p>如果您对本隐私政策有任何疑问，请联系：<a href="mailto:support@quickinvoice.app">support@quickinvoice.app</a></p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 QuickInvoice. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang, event) {
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.querySelectorAll('.lang-toggle button').forEach(b => b.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
